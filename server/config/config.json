@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "c2152280c_masenge",
+    "password": "w{pPq&(1^T85",
+    "database": "c2152280c_nouveaune",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "c2152280c_masenge",
+    "password": "w{pPq&(1^T85",
+    "database": "c2152280c_nouveaune",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "c2152280c_masenge",
+    "password": "w{pPq&(1^T85",
+    "database": "c2152280c_nouveaune",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}

@@ -1,0 +1,400 @@
+* {
+  margin: 0;
+  padding: 0;
+  top: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+}
+
+
+.personnalise::-webkit-scrollbar,
+.personnalise::-ms-scrollbar {
+  width: 0;
+  background-color: transparent;
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+.personalTextarea {
+  min-height: 50px;
+  max-height: 200px;
+}
+
+/* .pdf-block {
+  width: 1em;
+  height: 10em;
+  margin-bottom: 1em;
+} */
+
+.pffAffiche {
+  background-color: rgba(128, 128, 128, 0.541);
+  gap: 5px;
+ 
+
+}
+
+.pdf-document {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  gap: 5px;
+  background-color: rgba(128, 128, 128, 0.541);
+}
+
+.react-pdf__Page__textContent,
+.react-pdf__Page__annotations {
+  display: none;
+}
+
+.pdf-page-wrapper {
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 609.92020383739393px) {
+  .react-pdf__Page__canvas {
+    margin-left: 200px;
+  }
+
+  @media screen and (max-width: 409.92020383739393px) {
+    .react-pdf__Page__canvas {
+      margin-left: 400px;
+    }
+  }
+
+  @media screen and (max-width: 309.92020383739393px) {
+    .react-pdf__Page__canvas {
+      margin-left: 600px;
+    }
+  }
+}
+
+.carousel-container {
+  max-width: 600px;
+  padding: 25px;
+  margin: 0 auto;
+  background-color: rgba(128, 128, 128, 0.739);
+  border-radius: 20px;
+  margin-top: 5px;
+}
+
+/* App.css */
+
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.zoomable-image {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.zoomable-image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.zoom-box {
+  position: absolute;
+  border: 2px solid #000;
+  background-color: #fff;
+  z-index: 2;
+  pointer-events: none;
+  /* Pour que la boîte de zoom n'interfère pas avec les événements de la souris */
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+}
+
+.zoom-box img {
+  max-width: 100%;
+  height: auto;
+}
+
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  z-index: 10;
+  border-radius: 0px;
+  background: blue;
+  transform-origin: 0%;
+
+  border-bottom: 1px orange;
+}
+
+.border-red-700 {
+  border: 2px solid green;
+}
+
+.custom-spinner {
+  border: 4px solid #ff0000;
+  /* Couleur de la bordure */
+  border-top: 4px solid #00ff00;
+  /* Couleur de la partie supérieure de la bordure */
+  border-radius: 50%;
+  /* Pour obtenir une forme de cercle */
+  width: 40px;
+  height: 40px;
+  animation: spin 1s infinite linear;
+  /* Animation de rotation */
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.sigCanvas {
+  background-color: rgba(128, 128, 128, 0.178);
+  width: 15em;
+  height: 15em;
+}
+
+/* .rs-calendar-time-dropdown-column {
+  background-color: #000;
+} */
+.rs-calendar-time-dropdown-column .rs-calendar-time-dropdown-column-title {
+  background-color: #00ff00;
+  color: #ff0000;
+}
+
+.rs-calendar-header-has-time {
+  background-color: #000;
+}
+
+.rs-picker-daterange-content .rs-picker-daterange-header {
+  background-color: red;
+  color: #00ff00;
+  text-align: center;
+  font-family: serif;
+}
+
+.rs-calendar-header-has-time .rs-calendar-header-time-toolbar .rs-calendar-header-title-time {
+  color: #00ff00;
+}
+
+.rs-calendar-time-dropdown-column ul {
+  background-color: white;
+}
+
+.rs-calendar-time-dropdown-column li {
+  color: rgb(97, 97, 97);
+}
+
+.rs-calendar-time-dropdown-column li .rs-calendar-time-dropdown-cell-active {
+  background-color: orange;
+  color: white;
+}
+
+.rs-picker-toolbar-right .rs-btn-primary {
+  background-color: yellow;
+  color: red;
+}
+
+.rs-picker-toolbar-right .rs-btn-primary:hover {
+  background-color: green;
+}
+
+@media screen and (max-width: 558.8738993393px) {
+  .rs-picker-popup {
+    width: 95%;
+  }
+
+  .rs-picker-daterange-content {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-radius: 10px;
+    margin-top: 10px;
+    width: 19em;
+  }
+
+  .rs-calendar {
+    width: 20%;
+    border-top: 1px solid rgba(209, 207, 207, 0.938);
+  }
+}
+
+/* pour le select */
+.rs-picker-default {
+  margin: 10px;
+}
+
+.rs-picker-value-item,
+.rs-picker-value-separator {
+  color: #00ff00;
+}
+
+.rs-picker-toggle-value .rs-picker-value-count {
+  background-color: #00ff00;
+  color: blue;
+}
+
+.rs-picker-list-item .rs-check-item {
+  background-color: #7eb1b16c;
+  margin-top: 2px;
+}
+
+.rs-picker-list-item .rs-check-item .rs-checkbox-checker:hover {
+  background-color: yellow;
+  margin-top: 2px;
+}
+
+.rs-picker-list-item .rs-checkbox-checked {
+  background-color: #73ff0073;
+}
+
+.rs-checkbox-checked label {
+  color: fuchsia;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.rs-checkbox-wrapper {
+  background-color: transparent;
+  border: 0.5px solid fuchsia;
+  border-radius: 3px;
+  margin-bottom: 1px;
+  margin-right: 1px;
+}
+
+.rs-checkbox-checked .rs-checkbox-wrapper::before,
+.rs-checkbox-checked .rs-checkbox-inner::before,
+.rs-checkbox-checked .rs-checkbox-inner::after {
+  color: fuchsia;
+}
+
+/* dropdown */
+
+.rs-dropdown {
+  margin: 10px;
+}
+
+.rs-dropdown .rs-btn {
+  width: 100%;
+}
+
+/* pagination */
+.rs-pagination-group {
+  padding: 2px;
+  justify-content: space-around;
+  display: flex;
+}
+
+.rs-pagination-group-skip .rs-input {
+  padding-left: 2px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+@media screen and (max-width:613px) {
+  .rs-pagination-group {
+    flex-direction: column;
+  }
+
+  .rs-pagination-group-limit,
+  .rs-pagination-xs,
+  .rs-pagination-group-skip,
+  .rs-pagination-group-total {
+    width: 100%;
+    border-bottom: 1px solid rgb(223, 223, 223);
+    padding: 5px 0;
+  }
+
+  .rs-pagination-xs .rs-pagination-btn {
+    /* background-color: blue; */
+    /* color: #fff; */
+    width: 25px;
+    height: 20px;
+    font-size: 10px;
+  }
+
+  .rs-pagination-btn-disabled .rs-pagination-symbol {
+    /* background-color: red; */
+    width: 10px;
+    height: 10px;
+    margin: 1px;
+  }
+}
+
+/* Coursel */
+.custom-slider {
+  display: block;
+}
+
+.rs-carousel-content {
+  background-color: #00ff00;
+  padding: 2px;
+}
+
+.rs-carousel-content .rs-carousel-slider {
+  background-color: yellow;
+
+}
+
+.rs-carousel-slider .rs-carousel-slider-item {
+  background-color: darkgoldenrod;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+/* NavBars de google translate */
+
+.skiptranslate .VIpgJd-ZVi9od-ORHb-OEVmcd {
+  display: none;
+}
+
+#btr {
+  display: flex;
+  width: 7em;
+  height: 2.5em;
+  border-radius: 5px;
+  justify-content: 'center'
+}
+
+#btr .goog-te-combo {
+  padding: 6px;
+  cursor: pointer;
+  border: 1px solid fuchsia;
+  border-radius: 7px;
+  overflow: hidden;
+  outline: none;
+  width: 6em;
+  background-color: transparent;
+
+}
+
+/* .VIpgJd-ZVi9od-aZ2wEe-wOHMyf-ti6hGc:=>  pour le spinner lors de la translation qui affiche*/
+.VIpgJd-yAWNEb-hvhgNd {
+  display: none;
+}
+
+
+
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: rgba(128, 128, 128, 0.568);
+  height: 10px;
+  width: 10px;
+}

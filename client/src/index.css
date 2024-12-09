@@ -1,0 +1,6 @@
+@import 'react-toastify/dist/ReactToastify.css';
+@import 'sweetalert2/dist/sweetalert2.min.css';
+@import '~bootstrap-icons/font/bootstrap-icons.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
